@@ -49,7 +49,7 @@ function draw() {
 
   for(var i = 0; i < arr.length; i++){
     
-    if(arr[i].z < 2){
+    if(arr[i].z === 1){
       arr[i].fall();
       arr[i].draw();
     }
@@ -60,7 +60,7 @@ function draw() {
   
   for(var i = 0; i < arr.length; i++){
     
-    if(arr[i].z >= 2){
+    if(arr[i].z > 1){
       arr[i].fall();
       arr[i].draw();
     }
