@@ -5,7 +5,7 @@ var pathX = []; pathY = [];
 
 function preload(){
 
-  img = loadImage("Umbrella.png");
+  img = loadImage("images/Umbrella.png");
 
 }
 
@@ -49,7 +49,7 @@ function draw() {
 
   for(var i = 0; i < arr.length; i++){
     
-    if(arr[i].z === 1){
+    if(arr[i].z < 2){
       arr[i].fall();
       arr[i].draw();
     }
@@ -60,7 +60,7 @@ function draw() {
   
   for(var i = 0; i < arr.length; i++){
     
-    if(arr[i].z > 1){
+    if(arr[i].z >= 2){
       arr[i].fall();
       arr[i].draw();
     }
@@ -108,13 +108,11 @@ function lightningDraw(){
 
 }
 
-function mousePressed() {
+function mousePressed(){
   
-  if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
-  
+  if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height ) {
     let fs = fullscreen();
     fullscreen(!fs);
-  
   }
-
+  
 }
