@@ -1,4 +1,4 @@
-//rain by SomeTuffStuff
+//Rain by Atul Hegde
   
 //This project is heavily inspired by Daniel Shiffman's "Purple Rain in Processing"
 //https://thecodingtrain.com/CodingChallenges/004-purplerain.html, https://youtu.be/KkyIDI6rQJI
